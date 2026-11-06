@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "How to run AI models locally",
+    "section": "",
+    "text": "LM Studio\nOllama Desktop\nUnsloth Studio\nLlama.app\nllama.cpp\n\n\n\n\n\nOpenWebui Desktop\n\n\n\n\n\npi\nVSCode\ncontinue (VSCode Extension)\nOpenClaw\n\n\n\n\n\nHuggingFace\nhttps://www.reddit.com/r/LocalLLaMA/\nhttps://www.reddit.com/r/LocalLLaMA/wiki/index#wiki_resources (Outdated but still useful)\nhttps://artificialanalysis.ai/\nhttps://arena.ai/leaderboard"
+  },
+  {
+    "objectID": "index.html#links",
+    "href": "index.html#links",
+    "title": "How to run AI models locally",
+    "section": "",
+    "text": "LM Studio\nOllama Desktop\nUnsloth Studio\nLlama.app\nllama.cpp\n\n\n\n\n\nOpenWebui Desktop\n\n\n\n\n\npi\nVSCode\ncontinue (VSCode Extension)\nOpenClaw\n\n\n\n\n\nHuggingFace\nhttps://www.reddit.com/r/LocalLLaMA/\nhttps://www.reddit.com/r/LocalLLaMA/wiki/index#wiki_resources (Outdated but still useful)\nhttps://artificialanalysis.ai/\nhttps://arena.ai/leaderboard"
+  },
+  {
+    "objectID": "index.html#why-local-ai-models",
+    "href": "index.html#why-local-ai-models",
+    "title": "How to run AI models locally",
+    "section": "Why Local AI Models?",
+    "text": "Why Local AI Models?\nLocal AI offers key advantages over cloud services:\n\nPrivacy and Security: Your data never leaves your machine, ensuring maximum confidentiality.\nCost Control: Eliminates ongoing per-token API usage fees once the initial hardware investment is made.\nControl and Customization: You maintain full control over inference parameters (temperature, context length) and the model itself.\nOffline Capability: Models can run completely offline, independent of internet access."
+  },
+  {
+    "objectID": "index.html#limitations-and-hardware-requirements",
+    "href": "index.html#limitations-and-hardware-requirements",
+    "title": "How to run AI models locally",
+    "section": "Limitations and Hardware Requirements",
+    "text": "Limitations and Hardware Requirements\nLocal models are not a perfect replacement for frontier models, and hardware matters.\n\nInterpreting Specifications\n\nModel Size (7B, 13B, 70B): This is the number of parameters. More parameters generally mean better performance but require significantly more resources.\nQuantization (Q4_K_M, GGUF): This is a compression technique. Lower quantization (e.g., Q4) drastically reduces file size and memory usage but may result in a slight loss of accuracy.\nMemory Estimates: A rough guide: a 7B Q4 model generally requires about 4-5 GB of memory (VRAM or RAM).\n\n\n\nHardware Check\nLook for dedicated GPU VRAM if possible, as this provides the fastest inference. Strong multi-core CPU and large system RAM are viable alternatives for slower performance."
+  },
+  {
+    "objectID": "index.html#local-model-options-and-resources",
+    "href": "index.html#local-model-options-and-resources",
+    "title": "How to run AI models locally",
+    "section": "3. Local Model Options and Resources",
+    "text": "3. Local Model Options and Resources\nThere are several tools to get started:\n\nLM Studio/Unsloth Studio/Ollama Desktop: An all-in-one GUI solution, ideal for beginners.\nLlama.cpp/Llama.app: A highly optimized C/C++ library focused on maximizing efficiency on various hardware.\nOpenWebUI/Frontends: Web UIs that connect to a local API (e.g., running on LM Studio or Ollama), offering a polished chat experience."
+  },
+  {
+    "objectID": "index.html#local-vs.-frontier-models-gptclaude-comparison",
+    "href": "index.html#local-vs.-frontier-models-gptclaude-comparison",
+    "title": "How to run AI models locally",
+    "section": "Local vs. Frontier Models (GPT/Claude Comparison)",
+    "text": "Local vs. Frontier Models (GPT/Claude Comparison)\n\n\n\n\n\n\n\n\nFeature\nLocal Models (LLaMA, etc.)\nFrontier Models (GPT, Claude)\n\n\n\n\nPrivacy\nExcellent (Data stays local)\nLimited (Data must leave environment)\n\n\nReasoning/Knowledge\nGood, but limited by model size/training\nState-of-the-art, massive, up-to-date\n\n\nCost\nPredictable (Hardware cost only)\nVariable (Per-token operational cost)\n\n\nBest For\nPrivacy-sensitive tasks, offline use, narrow focus\nCutting-edge tasks, complex creative generation\n\n\n\n\nChoose Local: When privacy is paramount, or the task is narrow (e.g., summarizing internal docs).\nChoose Frontier: When the task requires the absolute cutting edge in reasoning or massive, up-to-date knowledge."
+  },
+  {
+    "objectID": "index.html#getting-started-with-lm-studio-the-easy-way",
+    "href": "index.html#getting-started-with-lm-studio-the-easy-way",
+    "title": "How to run AI models locally",
+    "section": "Getting Started with LM Studio (The Easy Way)",
+    "text": "Getting Started with LM Studio (The Easy Way)\n\nDownload & Install: Download and install LM Studio (Don’t download LM Studio Bionic).\nModel Selection: Search and download a manageable model. LM Studio tells you the estimated size of the model and whether it can run on your machine.\nInitial Chat: Load the model in LM Studio and start chatting with it You can customize the model in the model specific settings\n\nOptions include"
+  },
+  {
+    "objectID": "index.html#using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home",
+    "href": "index.html#using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home",
+    "title": "How to run AI models locally",
+    "section": "Using LM Studio as a server and Connect to other applications (Cat Chat at home)",
+    "text": "Using LM Studio as a server and Connect to other applications (Cat Chat at home)\n\nDownload OpenWebui Desktop, you don’t need the llama.cpp packaged alongside it.\nLM Studio Server Setup: Switch LM Studio to “Local Inference Server” mode.\n\nDeveloper Options need to be enabled in the settings\nOnce developer options are enabled, a server tab should appear in the sidebar\nClick on the server tab and launch the server.\nA local server should be hosted at http://127.0.0.1:1234 (http://localhost:1234) by default\n\nOpenWebUI Connection:\n\nSetup admin account\n\nIf you just plan on running models on your computer or if youre the only one that will ever use them, a secure password isn’t really necessary\n\nOnce you’ve made the admin account you should be brought into the Open Webui client, if not there should be an option to get to it in the sidebar\nNavigate to the connections pannel in admin settings by clicking on account icon in the bottom right -&gt; Settings -&gt; AI -&gt; Connections\nUnder OpenAI API click the + associated with Manage OpenAI API Connections\n\nChange Connection type to local\nSet the URL to either http://127.0.0.1:1234/v1 or http://localhost:1234/v1\nVerify that the connection works\nClick save\n\nGo back to chat and try and select a model that you have downloaded\n\n\n\nIf you want to connect your local models to other applications such as IDEs or other Agent software, you can connect them in a similar way. Most applications allow you to add a custom provider"
+  },
+  {
+    "objectID": "Local_AI_Models/content/presentation.html#why-local-ai-models",
+    "href": "Local_AI_Models/content/presentation.html#why-local-ai-models",
+    "title": "How to run AI models locally",
+    "section": "Why Local AI Models?",
+    "text": "Why Local AI Models?\n\nPrivacy and Security\n\nData never leaves your machine.\n\n\nCost Control\n\nNo per-token API fees once hardware is set up.\n\n\nControl and Customization\n\nFull control over parameters (temp, context).\n\n\nOffline Capability\n\nRun models without internet connection."
+  },
+  {
+    "objectID": "Local_AI_Models/content/presentation.html#limitations-and-hardware-requirements",
+    "href": "Local_AI_Models/content/presentation.html#limitations-and-hardware-requirements",
+    "title": "How to run AI models locally",
+    "section": "Limitations and Hardware Requirements",
+    "text": "Limitations and Hardware Requirements\nInterpreting Specs\n\nModel Size (e.g., 7B, 70B): Determines capability; more parameters = more power, but more memory.\nQuantization (Q4_K_M, GGUF): Model compression. Smaller file size, less memory usage, slight accuracy trade-off.\nMemory Estimates: A 7B Q4 model needs ~4-5 GB of VRAM/RAM.\n\nHardware Check\n\nIdeal: Dedicated GPU with sufficient VRAM.\nAlternative: Strong multi-core CPU and ample system RAM."
+  },
+  {
+    "objectID": "Local_AI_Models/content/presentation.html#some-local-model-options-and-resources",
+    "href": "Local_AI_Models/content/presentation.html#some-local-model-options-and-resources",
+    "title": "How to run AI models locally",
+    "section": "Some Local Model Options and Resources",
+    "text": "Some Local Model Options and Resources\n\nTools\n\nLM Studio: All-in-one GUI\nOllama: CLI tool and GUI\nLlama.cpp: Highly optimized library\nOpenWebUI/Frontends: Web UIs consuming the local API.\n\n\nSource\nHugging Face: Primary repository for models."
+  },
+  {
+    "objectID": "Local_AI_Models/content/presentation.html#local-vs.-frontier-models-gptclaude-comparison",
+    "href": "Local_AI_Models/content/presentation.html#local-vs.-frontier-models-gptclaude-comparison",
+    "title": "How to run AI models locally",
+    "section": "Local vs. Frontier Models (GPT/Claude Comparison)",
+    "text": "Local vs. Frontier Models (GPT/Claude Comparison)\nWhen to Choose Which\n\nChoose Local\n\nPrivacy Paramount\nOffline Necessity\nNarrow/Internal Tasks\n\n\nChoose Frontier\n\nCutting Edge Reasoning\nMassive Knowledge Base\nComplex “Creative” Generation"
+  },
+  {
+    "objectID": "Local_AI_Models/content/presentation.html#guide",
+    "href": "Local_AI_Models/content/presentation.html#guide",
+    "title": "How to run AI models locally",
+    "section": "Guide",
+    "text": "Guide\nefolsom17.github.io"
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html",
+    "href": "Local_AI_Models/content/workshop_guide.html",
+    "title": "How to run AI models locally",
+    "section": "",
+    "text": "LM Studio\nOllama Desktop\nUnsloth Studio\nLlama.app\nllama.cpp\n\n\n\n\n\nOpenWebui Desktop\n\n\n\n\n\npi\nVSCode\ncontinue (VSCode Extension)\nOpenClaw\n\n\n\n\n\nHuggingFace\nhttps://www.reddit.com/r/LocalLLaMA/\nhttps://www.reddit.com/r/LocalLLaMA/wiki/index#wiki_resources (Outdated but still useful)\nhttps://artificialanalysis.ai/\nhttps://arena.ai/leaderboard"
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html#links",
+    "href": "Local_AI_Models/content/workshop_guide.html#links",
+    "title": "How to run AI models locally",
+    "section": "",
+    "text": "LM Studio\nOllama Desktop\nUnsloth Studio\nLlama.app\nllama.cpp\n\n\n\n\n\nOpenWebui Desktop\n\n\n\n\n\npi\nVSCode\ncontinue (VSCode Extension)\nOpenClaw\n\n\n\n\n\nHuggingFace\nhttps://www.reddit.com/r/LocalLLaMA/\nhttps://www.reddit.com/r/LocalLLaMA/wiki/index#wiki_resources (Outdated but still useful)\nhttps://artificialanalysis.ai/\nhttps://arena.ai/leaderboard"
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html#why-local-ai-models",
+    "href": "Local_AI_Models/content/workshop_guide.html#why-local-ai-models",
+    "title": "How to run AI models locally",
+    "section": "Why Local AI Models?",
+    "text": "Why Local AI Models?\nLocal AI offers key advantages over cloud services:\n\nPrivacy and Security: Your data never leaves your machine, ensuring maximum confidentiality.\nCost Control: Eliminates ongoing per-token API usage fees once the initial hardware investment is made.\nControl and Customization: You maintain full control over inference parameters (temperature, context length) and the model itself.\nOffline Capability: Models can run completely offline, independent of internet access."
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html#limitations-and-hardware-requirements",
+    "href": "Local_AI_Models/content/workshop_guide.html#limitations-and-hardware-requirements",
+    "title": "How to run AI models locally",
+    "section": "Limitations and Hardware Requirements",
+    "text": "Limitations and Hardware Requirements\nLocal models are not a perfect replacement for frontier models, and hardware matters.\n\nInterpreting Specifications\n\nModel Size (7B, 13B, 70B): This is the number of parameters. More parameters generally mean better performance but require significantly more resources.\nQuantization (Q4_K_M, GGUF): This is a compression technique. Lower quantization (e.g., Q4) drastically reduces file size and memory usage but may result in a slight loss of accuracy.\nMemory Estimates: A rough guide: a 7B Q4 model generally requires about 4-5 GB of memory (VRAM or RAM).\n\n\n\nHardware Check\nLook for dedicated GPU VRAM if possible, as this provides the fastest inference. Strong multi-core CPU and large system RAM are viable alternatives for slower performance."
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html#local-model-options-and-resources",
+    "href": "Local_AI_Models/content/workshop_guide.html#local-model-options-and-resources",
+    "title": "How to run AI models locally",
+    "section": "3. Local Model Options and Resources",
+    "text": "3. Local Model Options and Resources\nThere are several tools to get started:\n\nLM Studio/Unsloth Studio/Ollama Desktop: An all-in-one GUI solution, ideal for beginners.\nLlama.cpp/Llama.app: A highly optimized C/C++ library focused on maximizing efficiency on various hardware.\nOpenWebUI/Frontends: Web UIs that connect to a local API (e.g., running on LM Studio or Ollama), offering a polished chat experience."
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html#local-vs.-frontier-models-gptclaude-comparison",
+    "href": "Local_AI_Models/content/workshop_guide.html#local-vs.-frontier-models-gptclaude-comparison",
+    "title": "How to run AI models locally",
+    "section": "Local vs. Frontier Models (GPT/Claude Comparison)",
+    "text": "Local vs. Frontier Models (GPT/Claude Comparison)\n\n\n\n\n\n\n\n\nFeature\nLocal Models (LLaMA, etc.)\nFrontier Models (GPT, Claude)\n\n\n\n\nPrivacy\nExcellent (Data stays local)\nLimited (Data must leave environment)\n\n\nReasoning/Knowledge\nGood, but limited by model size/training\nState-of-the-art, massive, up-to-date\n\n\nCost\nPredictable (Hardware cost only)\nVariable (Per-token operational cost)\n\n\nBest For\nPrivacy-sensitive tasks, offline use, narrow focus\nCutting-edge tasks, complex creative generation\n\n\n\n\nChoose Local: When privacy is paramount, or the task is narrow (e.g., summarizing internal docs).\nChoose Frontier: When the task requires the absolute cutting edge in reasoning or massive, up-to-date knowledge."
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html#getting-started-with-lm-studio-the-easy-way",
+    "href": "Local_AI_Models/content/workshop_guide.html#getting-started-with-lm-studio-the-easy-way",
+    "title": "How to run AI models locally",
+    "section": "Getting Started with LM Studio (The Easy Way)",
+    "text": "Getting Started with LM Studio (The Easy Way)\n\nDownload & Install: Download and install LM Studio (Don’t download LM Studio Bionic).\nModel Selection: Search and download a manageable model.\n\n\nLM Studio tells you the estimated size of the model and whether it can run on your machine.\n\n\nInitial Chat: Load the model in LM Studio and start chatting with it\n\n\nYou can customize the model"
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html#using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home",
+    "href": "Local_AI_Models/content/workshop_guide.html#using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home",
+    "title": "How to run AI models locally",
+    "section": "Using LM Studio as a server and Connect to other applications (Cat Chat at home)",
+    "text": "Using LM Studio as a server and Connect to other applications (Cat Chat at home)\n\nDownload OpenWebui Desktop, you don’t need the llama.cpp packaged alongside it.\nLM Studio Server Setup: Switch LM Studio to “Local Inference Server” mode.\n\nDeveloper Options need to be enabled in the settings\nOnce developer options are enabled, a server tab should appear in the sidebar\nClick on the server tab and launch the server.\nA local server should be hosted at http://127.0.0.1:1234 (http://localhost:1234) by default\n\nOpenWebUI Connection:\n\nSetup admin account\n\nIf you just plan on running models on your computer or if youre the only one that will ever use them, a secure password isn’t really necessary\n\nOnce you’ve made the admin account you should be brought into the Open Webui client, if not there should be an option to get to it in the sidebar\nNavigate to the connections pannel in admin settings by clicking on account icon in the bottom right -&gt; Settings -&gt; AI -&gt; Connections\nUnder OpenAI API click the + associated with Manage OpenAI API Connections\n\nChange Connection type to local\nSet the URL to either http://127.0.0.1:1234/v1 or http://localhost:1234/v1\nVerify that the connection works\nClick save\n\nGo back to chat and try and select a model that you have downloaded\n\n\n\nIf you want to connect your local models to other applications such as IDEs or other Agent software, you can connect them in a similar way. Most applications allow you to add a custom provider"
+  },
+  {
+    "objectID": "Local_AI_Models/content/workshop_guide.html#other-options",
+    "href": "Local_AI_Models/content/workshop_guide.html#other-options",
+    "title": "How to run AI models locally",
+    "section": "Other options",
+    "text": "Other options"
+  }
+]
