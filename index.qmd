@@ -10,6 +10,7 @@ format:
     toc-depth: 2
 ---
 
+
 ![](./figures/AISlopAtHome1.png) ![](./figures/AISlopAtHome2.png)
 
 
@@ -61,7 +62,7 @@ Local models are not a perfect replacement for frontier models, and hardware mat
 ### Hardware Check
 Look for dedicated GPU VRAM if possible, as this provides the fastest inference. Strong multi-core CPU and large system RAM are viable alternatives for slower performance.
 
-## 3. Local Model Options and Resources
+## Local Model Options and Resources
 
 There are several tools to get started:
 

@@ -24,8 +24,8 @@
     "objectID": "index.html#local-model-options-and-resources",
     "href": "index.html#local-model-options-and-resources",
     "title": "How to run AI models locally",
-    "section": "3. Local Model Options and Resources",
-    "text": "3. Local Model Options and Resources\nThere are several tools to get started:\n\nLM Studio/Unsloth Studio/Ollama Desktop: An all-in-one GUI solution, ideal for beginners.\nLlama.cpp/Llama.app: A highly optimized C/C++ library focused on maximizing efficiency on various hardware.\nOpenWebUI/Frontends: Web UIs that connect to a local API (e.g., running on LM Studio or Ollama), offering a polished chat experience."
+    "section": "Local Model Options and Resources",
+    "text": "Local Model Options and Resources\nThere are several tools to get started:\n\nLM Studio/Unsloth Studio/Ollama Desktop: An all-in-one GUI solution, ideal for beginners.\nLlama.cpp/Llama.app: A highly optimized C/C++ library focused on maximizing efficiency on various hardware.\nOpenWebUI/Frontends: Web UIs that connect to a local API (e.g., running on LM Studio or Ollama), offering a polished chat experience."
   },
   {
     "objectID": "index.html#local-vs.-frontier-models-gptclaude-comparison",
