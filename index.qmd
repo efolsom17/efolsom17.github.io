@@ -10,6 +10,8 @@ format:
     toc-depth: 2
 ---
 
+![](./figures/AISlopAtHome1.png) ![](./figures/AISlopAtHome2.png)
+
 
 ## Links
 
@@ -23,7 +25,7 @@ format:
 ### Frontend
 - [OpenWebui Desktop](https://github.com/open-webui/desktop)
 
-### Agents/IDEs
+### Agents/IDEs/MCP Servers
 - [pi](https://pi.dev/)
 - [VSCode](https://code.visualstudio.com/docs/agent-customization/language-models#_use-on-device-models)
 - [continue (VSCode Extension)](https://github.com/continuedev/continue#vs-code)
@@ -31,10 +33,10 @@ format:
 
 ### Finding Models/Information
 - [HuggingFace](https://huggingface.co)
-- https://www.reddit.com/r/LocalLLaMA/ 
-- https://www.reddit.com/r/LocalLLaMA/wiki/index#wiki_resources (Outdated but still useful)
-- https://artificialanalysis.ai/
-- https://arena.ai/leaderboard
+- [Reddit - LocalLLaMA](https://www.reddit.com/r/LocalLLaMA/)
+- [Reddit - LocalLLaMA Wiki](https://www.reddit.com/r/LocalLLaMA/wiki/index#wiki_resources) (Outdated but still useful)
+- [ArtificialAnalysis](https://artificialanalysis.ai/)
+- [Arena.ai Leaderboard](https://arena.ai/leaderboard) (Formerly LMArena)
 
 
 ## Why Local AI Models?
@@ -113,5 +115,16 @@ There are several tools to get started:
       - Click save
     - Go back to chat and try and select a model that you have downloaded
 
-- If you want to connect your local models to other applications such as IDEs or other Agent software, you can connect them in a similar way. Most applications allow you to add a custom provider 
+- If you want to connect your local models to other applications such as IDEs or other Agent software, you can connect them in a similar way. Most applications allow you to add a custom provider
+
+### Connecting to MCP Servers
+
+If you are connecting to a specific MCP (Machine Control Protocol) server endpoint, you will follow a similar process to connecting to OpenAI API connections, but you will need to specify the correct endpoint and provider type.
+
+1.  **Determine Endpoint:** Confirm the exact URL provided by your MCP server (e.g., `http://mcp-server.local:8000/v1`).
+2.  **Access Connections Panel:** In OpenWebUI, navigate to Settings -> AI -> Connections.
+3.  **Add Custom Provider:** Click the `+` button and select 'Custom API Endpoint' (or similar, depending on the latest OpenWebUI version).
+4.  **Configure:** Set the URL to your MCP server's endpoint and verify the connection works before saving.
+
+This method allows you to integrate local models or specific services running on an MCP server into your chat frontend.
 

@@ -5,15 +5,23 @@ format:
   revealjs:
     theme: clean
     slide-number: true
+    logo: ./figs/MSU-core-logo-400x300px.png
+    footer: "November 6, 2026 - TAILS - AI Slop At Home - Eric Folsom" 
 ---
 
-#
+# 
+
+[efolsom17.github.io](https://efolsom17.github.io/)
+
+# 
+
+![](./figs/AISlopAtHome1.png)
 
 
 
 #
 
-
+![](./figs/AISlopAtHome2.png)
 
 ## Why Local AI Models? {.incremental}
 
@@ -134,4 +142,4 @@ format:
 
 ## Guide 
 
-efolsom17.github.io
+[efolsom17.github.io](https://efolsom17.github.io/)

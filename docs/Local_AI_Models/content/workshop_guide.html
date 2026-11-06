@@ -98,6 +98,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../Local_AI_Models/content/presentation.html"> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -122,7 +128,6 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#getting-started-with-lm-studio-the-easy-way" id="toc-getting-started-with-lm-studio-the-easy-way" class="nav-link" data-scroll-target="#getting-started-with-lm-studio-the-easy-way">Getting Started with LM Studio (The Easy Way)</a></li>
   <li><a href="#using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home" id="toc-using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home" class="nav-link" data-scroll-target="#using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home">Using LM Studio as a server and Connect to other applications (Cat Chat at home)</a></li>
-  <li><a href="#other-options" id="toc-other-options" class="nav-link" data-scroll-target="#other-options">Other options</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -282,7 +287,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Initial Chat:</strong> Load the model in LM Studio and start chatting with it</li>
 </ol>
 <ul>
-<li>You can customize the model</li>
+<li><p>You can customize the model in the model specific settings</p></li>
+<li><p>Options include setting a system prompt, changing the model temperature, setting up structured output, etc.</p></li>
 </ul>
 </section>
 <section id="using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home" class="level2">
@@ -295,6 +301,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Once developer options are enabled, a server tab should appear in the sidebar</li>
 <li>Click on the server tab and launch the server.</li>
 <li>A local server should be hosted at <code>http://127.0.0.1:1234</code> (<code>http://localhost:1234</code>) by default</li>
+<li>You can set a timeout option which will unload models after a certain idle period</li>
 </ul></li>
 <li><strong>OpenWebUI Connection:</strong>
 <ul>
@@ -317,9 +324,6 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>If you want to connect your local models to other applications such as IDEs or other Agent software, you can connect them in a similar way. Most applications allow you to add a custom provider</li>
 </ul>
-</section>
-<section id="other-options" class="level2">
-<h2 class="anchored" data-anchor-id="other-options">Other options</h2>
 
 
 </section>

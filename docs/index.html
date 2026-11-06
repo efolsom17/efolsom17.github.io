@@ -97,6 +97,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./Local_AI_Models/content/presentation.html"> 
+<span class="menu-text">Slides</span></a>
+  </li>  
+</ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
@@ -148,6 +154,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><img src="./figures/AISlopAtHome1.png" class="img-fluid"> <img src="./figures/AISlopAtHome2.png" class="img-fluid"></p>
 <section id="links" class="level2">
 <h2 class="anchored" data-anchor-id="links">Links</h2>
 <section id="inference-guisruntimes" class="level3">
@@ -166,8 +173,8 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://github.com/open-webui/desktop">OpenWebui Desktop</a></li>
 </ul>
 </section>
-<section id="agentsides" class="level3">
-<h3 class="anchored" data-anchor-id="agentsides">Agents/IDEs</h3>
+<section id="agentsidesmcp-servers" class="level3">
+<h3 class="anchored" data-anchor-id="agentsidesmcp-servers">Agents/IDEs/MCP Servers</h3>
 <ul>
 <li><a href="https://pi.dev/">pi</a></li>
 <li><a href="https://code.visualstudio.com/docs/agent-customization/language-models#_use-on-device-models">VSCode</a></li>
@@ -179,10 +186,10 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="finding-modelsinformation">Finding Models/Information</h3>
 <ul>
 <li><a href="https://huggingface.co">HuggingFace</a></li>
-<li>https://www.reddit.com/r/LocalLLaMA/</li>
-<li>https://www.reddit.com/r/LocalLLaMA/wiki/index#wiki_resources (Outdated but still useful)</li>
-<li>https://artificialanalysis.ai/</li>
-<li>https://arena.ai/leaderboard</li>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/">Reddit - LocalLLaMA</a></li>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/wiki/index#wiki_resources">Reddit - LocalLLaMA Wiki</a> (Outdated but still useful)</li>
+<li><a href="https://artificialanalysis.ai/">ArtificialAnalysis</a></li>
+<li><a href="https://arena.ai/leaderboard">Arena.ai Leaderboard</a> (Formerly LMArena)</li>
 </ul>
 </section>
 </section>
@@ -308,8 +315,19 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>If you want to connect your local models to other applications such as IDEs or other Agent software, you can connect them in a similar way. Most applications allow you to add a custom provider</li>
 </ul>
+<section id="connecting-to-mcp-servers" class="level3">
+<h3 class="anchored" data-anchor-id="connecting-to-mcp-servers">Connecting to MCP Servers</h3>
+<p>If you are connecting to a specific MCP (Machine Control Protocol) server endpoint, you will follow a similar process to connecting to OpenAI API connections, but you will need to specify the correct endpoint and provider type.</p>
+<ol type="1">
+<li><strong>Determine Endpoint:</strong> Confirm the exact URL provided by your MCP server (e.g., <code>http://mcp-server.local:8000/v1</code>).</li>
+<li><strong>Access Connections Panel:</strong> In OpenWebUI, navigate to Settings -&gt; AI -&gt; Connections.</li>
+<li><strong>Add Custom Provider:</strong> Click the <code>+</code> button and select ‘Custom API Endpoint’ (or similar, depending on the latest OpenWebUI version).</li>
+<li><strong>Configure:</strong> Set the URL to your MCP server’s endpoint and verify the connection works before saving.</li>
+</ol>
+<p>This method allows you to integrate local models or specific services running on an MCP server into your chat frontend.</p>
 
 
+</section>
 </section>
 </section>
 

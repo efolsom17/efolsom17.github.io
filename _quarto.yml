@@ -8,6 +8,9 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+    right:
+      - text: "Slides"
+        href: Local_AI_Models/content/presentation.qmd
 
 format:
   html:
