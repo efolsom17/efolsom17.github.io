@@ -39,7 +39,7 @@
     "href": "index.html#getting-started-with-lm-studio-the-easy-way",
     "title": "How to run AI models locally",
     "section": "Getting Started with LM Studio (The Easy Way)",
-    "text": "Getting Started with LM Studio (The Easy Way)\n\nDownload & Install: Download and install LM Studio (Don’t download LM Studio Bionic).\nModel Selection: Search and download a manageable model. LM Studio tells you the estimated size of the model and whether it can run on your machine.\nInitial Chat: Load the model in LM Studio and start chatting with it You can customize the model in the model specific settings\n\nOptions include"
+    "text": "Getting Started with LM Studio (The Easy Way)\n\nDownload & Install: Download and install LM Studio (Don’t download LM Studio Bionic).\nModel Selection: Search and download a manageable model.\n\nLM Studio will tell you the estimated size of the model and whether it can run on your machine.\n\nInitial Chat: Load the model in LM Studio and start chatting with it\n\nYou can customize the model in the model specific settings\nOptions include setting a system prompt, changing the model temperature, setting up structured output, etc."
   },
   {
     "objectID": "index.html#using-lm-studio-as-a-server-and-connect-to-other-applications-cat-chat-at-home",
